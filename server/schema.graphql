@@ -1,0 +1,32 @@
+enum InventoryCategory {
+  Shirts
+  Jeans
+  Jackets
+  Sweaters
+  Accessories
+}
+
+type Product{
+  id: Int!
+  Category: [InventoryCategory]!
+  ProductName: String!
+  Price: Float
+  ImageUrl: String
+}
+
+input ProductInput{
+  Category: [InventoryCategory]!
+  ProductName: String!
+  Price: Float
+  ImageUrl: String
+}
+
+type Mutation{
+	setAboutMessage(message: String!): String
+	productAdd(product: ProductInput) : Product
+}
+
+type Query{
+	about: String!
+	productList: [Product!]!
+}

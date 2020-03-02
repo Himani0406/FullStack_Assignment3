@@ -1,0 +1,12 @@
+.top-buffer { margin-top:20px; }
+
+.bordered-table th, td {border: 1px solid silver; padding: 4px;}
+.bordered-table {border-collapse: collapse;}
+.colmn-width {
+  table-layout: fixed;
+  width: 80%;  
+}
+
+.hidden{
+	visibility=hidden;
+}
